@@ -70,7 +70,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt joblib
+          pip install -r requirements.txt
           pip install -e .
 
       - name: Build the index and fit the reranker

@@ -22,6 +22,10 @@ dependencies = [
     "numpy>=1.26",
     "scipy>=1.11",
     "scikit-learn>=1.4",
+    # Imported directly by the embedder and reranker persistence paths. It
+    # currently arrives as a scikit-learn dependency, but relying on that would
+    # break index loading the moment scikit-learn stopped requiring it.
+    "joblib>=1.3",
     "pydantic>=2.6",
     "pydantic-settings>=2.2",
     "fastapi>=0.110",
@@ -44,6 +48,10 @@ postgres = ["psycopg[binary]>=3.1", "pgvector>=0.2.5"]
 qdrant = ["qdrant-client>=1.8"]
 cache = ["redis>=5.0"]
 transformers = ["sentence-transformers>=2.6", "torch>=2.2"]
+# Hosted backends for the abstractive synthesiser and the hosted embedder.
+# Kept as separate extras so selecting one does not install the other.
+anthropic = ["anthropic>=0.25"]
+openai = ["openai>=1.20"]
 dev = [
     "pytest>=8.0",
     "pytest-cov>=5.0",
