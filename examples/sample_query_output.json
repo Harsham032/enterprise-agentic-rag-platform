@@ -1,0 +1,249 @@
+{
+  "single_hop": {
+    "query": "Which turbine supplier concentration risk does Northwind Energy disclose?",
+    "answer": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets. As of December 31, 2023 the Company owned interests in 31 operating projects with 3,760 megawatts of net installed capacity, of which 2,940 megawatts is wind and 820 megawatts is solar. [1] A sustained period of below-median resource availability would reduce revenue and could cause us to fall short of the availability guarantees embedded in several of our power purchase agreements. We depend on a concentrated set of turbine suppliers. [2] Two manufacturers supplied 84 percent of the turbines in our operating fleet, and one of those two supplied every turbine installed at our four largest wind projects. A prolonged production interruption, insolvency or trade restriction affecting either supplier would delay our construction programme and increase the cost of replacement components. [2] Projects that cannot secure timely interconnection may lose their offtake agreements or their eligibility for production tax credits. We are exposed to merchant price risk on the uncontracted portion of our generation. [2]",
+    "citations": [
+      {
+        "marker": 1,
+        "chunk_id": "bd88467aedb6cd77",
+        "doc_id": "2a887ac68458ea8b",
+        "label": "Northwind Energy Corporation - 10-K - FY2023 - Item 1. Business",
+        "quote": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets. As of December 31, 2023 the Company owned interests in 31 operating projects with 3,760 megawatts of net installed...",
+        "support_score": 1.0,
+        "verified": true
+      },
+      {
+        "marker": 2,
+        "chunk_id": "89a6cf07f5183652",
+        "doc_id": "c1e558e278ace0e5",
+        "label": "Northwind Energy Corporation - 10-K - FY2024 - Item 1A. Risk Factors",
+        "quote": "A sustained period of below-median resource availability would reduce revenue and could cause us to fall short of the availability guarantees embedded in several of our power purchase agreements. We depend on a concentrated set of...",
+        "support_score": 1.0,
+        "verified": true
+      }
+    ],
+    "evidence": [
+      {
+        "chunk_id": "bd88467aedb6cd77",
+        "doc_id": "2a887ac68458ea8b",
+        "source_type": "sec_filing",
+        "section_heading": "Item 1. Business",
+        "text": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets. As of December 31, 2023 the Company owned interests in 31 operating projects with 3,760 megawatts of net installed capacity, of which 2,940 megawatts is wind and 820 megawatts is solar. Approximately 81 percent of expected 2024 generation was contracted under power purchase agreements. The Company employed 1,155 people at December 31, 2023.",
+        "score": 0.8597,
+        "lexical_score": 6.9753,
+        "dense_score": 0.714,
+        "rerank_score": null,
+        "rank": 1
+      },
+      {
+        "chunk_id": "89a6cf07f5183652",
+        "doc_id": "c1e558e278ace0e5",
+        "source_type": "sec_filing",
+        "section_heading": "Item 1A. Risk Factors",
+        "text": "Our generation revenue depends on weather conditions that we do not control. Wind speeds in the upper Midwest during 2024 were approximately 6 percent below the ten-year median, which reduced wind generation volumes by 412 gigawatt hours relative to our long-term production estimate. A sustained period of below-median resource availability would reduce revenue and could cause us to fall short of the availability guarantees embedded in several of our power purchase agreements. We depend on a concentrated set of turbine suppliers. Two manufacturers supplied 84 percent of the turbines in our operating fleet, and one of those two supplied every turbine installed at our four largest wind projects. A prolonged production interruption, insolvency or trade restriction affecting either supplier would delay our construction programme and increase the cost of replacement components. We have not qualified an alternative supplier for the 5.6 megawatt platform used in our 2025 construction plan. Interconnection queue delays represent a material constraint on our growth. The median time from queue entry to an executed interconnection agreement in our principal markets extended to 44 months in 2024 from 31 months in 2021. Projects that cannot secure timely interconnection may lose their offtake agreements or their eligibility for production tax credits. We are exposed to merchant price risk on the uncontracted portion of our generation. A one dollar per megawatt hour change in realised merchant prices would have changed 2024 revenue by approximately 8.4 million dollars. Our debt agreements contain financial covenants. At December 31, 2024 our consolidated net leverage ratio was 4.1 times adjusted EBITDA against a covenant ceiling of 5.0 times. A decline in generation volumes or realised prices could reduce headroom under this covenant.",
+        "score": 0.8294,
+        "lexical_score": 10.1339,
+        "dense_score": 0.4925,
+        "rerank_score": null,
+        "rank": 2
+      }
+    ],
+    "subqueries": [
+      "Which turbine supplier concentration risk does Northwind Energy disclose?"
+    ],
+    "tools_used": [
+      "document_search"
+    ],
+    "groundedness": 1.0,
+    "latency_ms": 35.9,
+    "diagnostics": {
+      "mode": "extractive",
+      "candidate_spans": 48,
+      "selected_spans": 4,
+      "distinct_sources": 2,
+      "citations_verified": 2,
+      "strategy": "single_hop",
+      "subquery_count": 1,
+      "evidence_chunks": 6,
+      "structured_rows": 0,
+      "tool_errors": [],
+      "planning_ms": 0.11,
+      "retrieval_ms": 4.49,
+      "generation_ms": 31.31
+    }
+  },
+  "temporal_comparison": {
+    "query": "Compare Northwind Energy revenue growth in 2024 against 2023",
+    "answer": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets. As of December 31, 2023 the Company owned interests in 31 operating projects with 3,760 megawatts of net installed capacity, of which 2,940 megawatts is wind and 820 megawatts is solar. [1] Approximately 81 percent of expected 2024 generation was contracted under power purchase agreements. The Company employed 1,155 people at December 31, 2023. [1] Total revenue was 1,284.6 million dollars in 2024, 1,232.8 million dollars in 2023 and 1,147.2 million dollars in 2022. Net income attributable to common shareholders was 118.9 million dollars in 2024, 143.2 million dollars in 2023 and 121.6 million dollars in 2022. [2] The Company's development pipeline totalled 6,900 megawatts at year end, of which 1,450 megawatts had reached the advanced stage, meaning interconnection queue position, site control and a signed offtake term sheet were all in place. Northwind employed 1,240 people at December 31, 2024, of whom 410 worked in field operations and maintenance. [3]",
+    "citations": [
+      {
+        "marker": 1,
+        "chunk_id": "bd88467aedb6cd77",
+        "doc_id": "2a887ac68458ea8b",
+        "label": "Northwind Energy Corporation - 10-K - FY2023 - Item 1. Business",
+        "quote": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets. As of December 31, 2023 the Company owned interests in 31 operating projects with 3,760 megawatts of net installed...",
+        "support_score": 1.0,
+        "verified": true
+      },
+      {
+        "marker": 2,
+        "chunk_id": "00def6678cfa5a95",
+        "doc_id": "c1e558e278ace0e5",
+        "label": "Northwind Energy Corporation - 10-K - FY2024 - Item 8. Financial Statements and Supplementary Data",
+        "quote": "Total revenue was 1,284.6 million dollars in 2024, 1,232.8 million dollars in 2023 and 1,147.2 million dollars in 2022. Net income attributable to common shareholders was 118.9 million dollars in 2024, 143.2 million dollars in 2023 and...",
+        "support_score": 1.0,
+        "verified": true
+      },
+      {
+        "marker": 3,
+        "chunk_id": "14f1452d722dbd1d",
+        "doc_id": "c1e558e278ace0e5",
+        "label": "Northwind Energy Corporation - 10-K - FY2024 - Item 1. Business",
+        "quote": "The Company's development pipeline totalled 6,900 megawatts at year end, of which 1,450 megawatts had reached the advanced stage, meaning interconnection queue position, site control and a signed offtake term sheet were all in place....",
+        "support_score": 1.0,
+        "verified": true
+      }
+    ],
+    "evidence": [
+      {
+        "chunk_id": "bd88467aedb6cd77",
+        "doc_id": "2a887ac68458ea8b",
+        "source_type": "sec_filing",
+        "section_heading": "Item 1. Business",
+        "text": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets. As of December 31, 2023 the Company owned interests in 31 operating projects with 3,760 megawatts of net installed capacity, of which 2,940 megawatts is wind and 820 megawatts is solar. Approximately 81 percent of expected 2024 generation was contracted under power purchase agreements. The Company employed 1,155 people at December 31, 2023.",
+        "score": 1.0,
+        "lexical_score": 7.8362,
+        "dense_score": 0.6733,
+        "rerank_score": null,
+        "rank": 1
+      },
+      {
+        "chunk_id": "14f1452d722dbd1d",
+        "doc_id": "c1e558e278ace0e5",
+        "source_type": "sec_filing",
+        "section_heading": "Item 1. Business",
+        "text": "Northwind Energy Corporation develops, owns and operates onshore wind and utility-scale solar generation assets across the upper Midwest and the Texas panhandle. As of December 31, 2024 the Company owned interests in 34 operating projects with 4,180 megawatts of net installed capacity, of which 3,020 megawatts is wind and 1,160 megawatts is solar. Approximately 78 percent of expected 2025 generation is contracted under power purchase agreements with a weighted average remaining term of 9.4 years. The Company sells the balance of its output into the wholesale markets operated by the Midcontinent Independent System Operator and the Electric Reliability Council of Texas. The Company's development pipeline totalled 6,900 megawatts at year end, of which 1,450 megawatts had reached the advanced stage, meaning interconnection queue position, site control and a signed offtake term sheet were all in place. Northwind employed 1,240 people at December 31, 2024, of whom 410 worked in field operations and maintenance.",
+        "score": 0.8659,
+        "lexical_score": 7.007,
+        "dense_score": 0.5674,
+        "rerank_score": null,
+        "rank": 2
+      }
+    ],
+    "subqueries": [
+      "Northwind Energy revenue growth in 2024",
+      "Northwind Energy revenue growth in 2023"
+    ],
+    "tools_used": [
+      "financial_lookup"
+    ],
+    "groundedness": 1.0,
+    "latency_ms": 14.3,
+    "diagnostics": {
+      "mode": "extractive",
+      "candidate_spans": 15,
+      "selected_spans": 4,
+      "distinct_sources": 2,
+      "citations_verified": 3,
+      "strategy": "temporal_comparison",
+      "subquery_count": 2,
+      "evidence_chunks": 3,
+      "structured_rows": 0,
+      "tool_errors": [],
+      "planning_ms": 0.21,
+      "retrieval_ms": 6.39,
+      "generation_ms": 7.71
+    }
+  },
+  "cross_source": {
+    "query": "Which studies report that a model degraded when evaluated outside its development setting?",
+    "answer": "A convolutional neural network was trained on 412,000 paired electrocardiogram and echocardiogram studies from one academic health system and evaluated without retraining on 96,300 paired studies from three geographically separate systems. The outcome was an ejection fraction at or below 40 percent. [1] Discrimination degraded modestly and calibration degraded substantially on external validation. Site-level recalibration recovered calibration at low cost, and the persistent sex gap warrants investigation before deployment. [2] A gradient-boosted model predicting unplanned 30-day readmission was run silently against live admissions at a 900-bed hospital for nine months, generating 24,118 scored discharges without returning predictions to clinicians. Retrospective development performance was compared against prospective performance, and decision curve analysis was used to assess net benefit across plausible intervention thresholds. [3] Distributor weeks of inventory on hand declined to 9.6 weeks from 11.4 weeks at fiscal year end 2024, indicating that the destocking cycle described in our most recent annual report has largely run its course. Research and development expense was 126.4 million dollars. [4]",
+    "citations": [
+      {
+        "marker": 1,
+        "chunk_id": "c862f2afae7dbcb1",
+        "doc_id": "c23544f6e0e122fa",
+        "label": "Deep Learning Screening for Left Ventricular Systolic Dysfunction from the 12-Lead Electrocardiogram: External Validation Across Three Health Systems (Digit Cardiol, 2024)",
+        "quote": "A convolutional neural network was trained on 412,000 paired electrocardiogram and echocardiogram studies from one academic health system and evaluated without retraining on 96,300 paired studies from three geographically separate...",
+        "support_score": 1.0,
+        "verified": true
+      },
+      {
+        "marker": 2,
+        "chunk_id": "c69ebb0a0261acdb",
+        "doc_id": "c23544f6e0e122fa",
+        "label": "Deep Learning Screening for Left Ventricular Systolic Dysfunction from the 12-Lead Electrocardiogram: External Validation Across Three Health Systems (Digit Cardiol, 2024)",
+        "quote": "Discrimination degraded modestly and calibration degraded substantially on external validation. Site-level recalibration recovered calibration at low cost, and the persistent sex gap warrants investigation before deployment.",
+        "support_score": 1.0,
+        "verified": true
+      },
+      {
+        "marker": 3,
+        "chunk_id": "1642003454a9a79f",
+        "doc_id": "905e5132c40f60ae",
+        "label": "Prospective Silent Evaluation of a 30-Day Readmission Risk Model Before Clinical Deployment (J Health Inform Eval, 2024)",
+        "quote": "A gradient-boosted model predicting unplanned 30-day readmission was run silently against live admissions at a 900-bed hospital for nine months, generating 24,118 scored discharges without returning predictions to clinicians....",
+        "support_score": 1.0,
+        "verified": true
+      },
+      {
+        "marker": 4,
+        "chunk_id": "56348ada3980708d",
+        "doc_id": "1ee84e406001196e",
+        "label": "Meridian Semiconductor, Inc. - 10-Q - FY2025 - Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "quote": "Distributor weeks of inventory on hand declined to 9.6 weeks from 11.4 weeks at fiscal year end 2024, indicating that the destocking cycle described in our most recent annual report has largely run its course. Research and development...",
+        "support_score": 1.0,
+        "verified": true
+      }
+    ],
+    "evidence": [
+      {
+        "chunk_id": "c862f2afae7dbcb1",
+        "doc_id": "c23544f6e0e122fa",
+        "source_type": "biomedical_abstract",
+        "section_heading": "Methods",
+        "text": "A convolutional neural network was trained on 412,000 paired electrocardiogram and echocardiogram studies from one academic health system and evaluated without retraining on 96,300 paired studies from three geographically separate systems. The outcome was an ejection fraction at or below 40 percent. Subgroup performance was assessed by sex, by age band and by self-reported race.",
+        "score": 1.0,
+        "lexical_score": 8.4193,
+        "dense_score": 0.4558,
+        "rerank_score": null,
+        "rank": 1
+      },
+      {
+        "chunk_id": "c69ebb0a0261acdb",
+        "doc_id": "c23544f6e0e122fa",
+        "source_type": "biomedical_abstract",
+        "section_heading": "Conclusions",
+        "text": "Discrimination degraded modestly and calibration degraded substantially on external validation. Site-level recalibration recovered calibration at low cost, and the persistent sex gap warrants investigation before deployment.",
+        "score": 0.86,
+        "lexical_score": 6.0974,
+        "dense_score": 0.4426,
+        "rerank_score": null,
+        "rank": 2
+      }
+    ],
+    "subqueries": [
+      "Which studies report that a model degraded when evaluated outside its development setting?"
+    ],
+    "tools_used": [
+      "document_search"
+    ],
+    "groundedness": 1.0,
+    "latency_ms": 11.7,
+    "diagnostics": {
+      "mode": "extractive",
+      "candidate_spans": 18,
+      "selected_spans": 4,
+      "distinct_sources": 3,
+      "citations_verified": 4,
+      "strategy": "single_hop",
+      "subquery_count": 1,
+      "evidence_chunks": 6,
+      "structured_rows": 0,
+      "tool_errors": [],
+      "planning_ms": 0.09,
+      "retrieval_ms": 3.3,
+      "generation_ms": 8.34
+    }
+  }
+}
