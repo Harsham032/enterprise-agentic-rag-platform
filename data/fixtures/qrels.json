@@ -1,0 +1,766 @@
+{
+  "version": "1.0",
+  "corpus": "data/fixtures/corpus",
+  "description": "Relevance judgements for the bundled evaluation corpus. Targets are addressed by source filename and section heading rather than by chunk id, so the judgements remain valid when the chunking configuration changes. A retrieved chunk counts as relevant when its document and section both appear in the query's relevant list.",
+  "answer_terms_note": "answer_terms are the content elements a complete answer must contain. They are used to compute answer completeness and are not used for retrieval.",
+  "queries": [
+    {
+      "query_id": "q001",
+      "query": "Which turbine supplier concentration risk does Northwind Energy disclose?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "two manufacturers",
+        "84 percent",
+        "alternative supplier"
+      ]
+    },
+    {
+      "query_id": "q002",
+      "query": "What was Northwind Energy total revenue in 2024 and how much did it grow?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+            "Item 8. Financial Statements and Supplementary Data"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "1,284.6 million",
+        "4.2 percent"
+      ]
+    },
+    {
+      "query_id": "q003",
+      "query": "How far below the ten-year median were wind speeds for Northwind Energy in 2024?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "6 percent",
+        "below the ten-year median",
+        "412 gigawatt hours"
+      ]
+    },
+    {
+      "query_id": "q004",
+      "query": "What is Northwind Energy consolidated net leverage ratio and the covenant ceiling?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "4.1 times",
+        "5.0 times",
+        "covenant"
+      ]
+    },
+    {
+      "query_id": "q005",
+      "query": "How long did interconnection agreements take to secure in 2024 compared with 2021?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "44 months",
+        "31 months",
+        "2021"
+      ]
+    },
+    {
+      "query_id": "q006",
+      "query": "Why did the Cascade Logistics brokerage net revenue margin decline?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "cascade_logistics_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "14.1 percent",
+        "16.8 percent",
+        "spot",
+        "rates fell"
+      ]
+    },
+    {
+      "query_id": "q007",
+      "query": "What happened to the Cascade Logistics matching platform in November 2024?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "cascade_logistics_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "cloud availability zone",
+        "nine hours",
+        "4.1 million"
+      ]
+    },
+    {
+      "query_id": "q008",
+      "query": "What worker classification litigation does Cascade Logistics face?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "cascade_logistics_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "two putative class actions",
+        "owner-operator",
+        "independent contractors"
+      ]
+    },
+    {
+      "query_id": "q009",
+      "query": "What share of Meridian Semiconductor wafer volume came from a single foundry?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "meridian_semiconductor_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "71 percent",
+        "single foundry",
+        "twelve months"
+      ]
+    },
+    {
+      "query_id": "q010",
+      "query": "Why did Meridian Semiconductor gross margin decline in fiscal 2024?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "meridian_semiconductor_10k_fy2024.md",
+          "sections": [
+            "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "58.4 percent",
+        "370 basis point",
+        "factory loading",
+        "inventory reserves"
+      ]
+    },
+    {
+      "query_id": "q011",
+      "query": "How does export control regulation affect Meridian Semiconductor revenue?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "meridian_semiconductor_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "34 million",
+        "export control",
+        "addressable revenue"
+      ]
+    },
+    {
+      "query_id": "q012",
+      "query": "What caused the Atlas Payments chargeback losses in 2024?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "atlas_payments_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "94.6 million",
+        "38.1 million",
+        "travel sector merchant",
+        "administration"
+      ]
+    },
+    {
+      "query_id": "q013",
+      "query": "How much did the Atlas Payments issuer processing migration reduce authorisation latency?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "atlas_payments_10k_fy2024.md",
+          "sections": [
+            "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "118 milliseconds",
+        "74 milliseconds",
+        "ninety-fifth percentile"
+      ]
+    },
+    {
+      "query_id": "q014",
+      "query": "How much cash runway does Vertexa Biopharma report and until when?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "vertex_biopharma_10k_fy2024.md",
+          "sections": [
+            "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "1,206.4 million",
+        "first half of 2027"
+      ]
+    },
+    {
+      "query_id": "q015",
+      "query": "What manufacturing concentration risk does Vertexa Biopharma disclose for its lead candidate?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "vertex_biopharma_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "single facility",
+        "Ireland",
+        "technology transfer",
+        "2026"
+      ]
+    },
+    {
+      "query_id": "q016",
+      "query": "What proportion of Vertexa Biopharma research spending went to its lead candidate?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "vertex_biopharma_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "74 percent",
+        "VXB-214"
+      ]
+    },
+    {
+      "query_id": "q017",
+      "query": "Compare Northwind Energy revenue growth in 2024 against 2023",
+      "type": "comparison",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+            "Item 8. Financial Statements and Supplementary Data"
+          ]
+        },
+        {
+          "document": "northwind_energy_10k_fy2023.md",
+          "sections": [
+            "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "4.2 percent",
+        "7.5 percent"
+      ]
+    },
+    {
+      "query_id": "q018",
+      "query": "How did the Cascade Logistics brokerage net revenue margin change between 2022 and 2024?",
+      "type": "comparison",
+      "relevant": [
+        {
+          "document": "cascade_logistics_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        },
+        {
+          "document": "cascade_logistics_10k_fy2023.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "14.1 percent",
+        "16.8 percent",
+        "19.4 percent"
+      ]
+    },
+    {
+      "query_id": "q019",
+      "query": "Did Meridian Semiconductor distributor inventory improve after fiscal 2024?",
+      "type": "comparison",
+      "relevant": [
+        {
+          "document": "meridian_semiconductor_10q_q2_fy2025.md",
+          "sections": [
+            "Item 2. Management's Discussion and Analysis of Financial Condition and Results of Operations"
+          ]
+        },
+        {
+          "document": "meridian_semiconductor_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "9.6 weeks",
+        "11.4 weeks",
+        "destocking"
+      ]
+    },
+    {
+      "query_id": "q020",
+      "query": "Compare turbine supplier concentration disclosed by Northwind Energy in 2023 and 2024",
+      "type": "comparison",
+      "relevant": [
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        },
+        {
+          "document": "northwind_energy_10k_fy2023.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "84 percent",
+        "87 percent",
+        "two manufacturers"
+      ]
+    },
+    {
+      "query_id": "q021",
+      "query": "Which companies disclose a single-site or single-supplier manufacturing dependency?",
+      "type": "comparison",
+      "relevant": [
+        {
+          "document": "meridian_semiconductor_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        },
+        {
+          "document": "vertex_biopharma_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        },
+        {
+          "document": "northwind_energy_10k_fy2024.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "foundry",
+        "single facility",
+        "turbine",
+        "concentration"
+      ]
+    },
+    {
+      "query_id": "q022",
+      "query": "What did Meridian Semiconductor report about foundry capacity reallocation in 2025?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "meridian_semiconductor_10q_q2_fy2025.md",
+          "sections": [
+            "Item 1A. Risk Factors"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "65 nanometre",
+        "capacity reallocation",
+        "nine and fifteen months"
+      ]
+    },
+    {
+      "query_id": "q023",
+      "query": "What fetal haemoglobin level was achieved after BCL11A enhancer editing and how durable was it?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "gene_editing_sickle_cell.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "41.3 percent",
+        "39.8 percent",
+        "month 24",
+        "30 months"
+      ]
+    },
+    {
+      "query_id": "q024",
+      "query": "How much weight was regained after stopping GLP-1 receptor agonist therapy?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "glp1_weight_maintenance.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "11.6 percent",
+        "68 percent",
+        "15.7 percentage points"
+      ]
+    },
+    {
+      "query_id": "q025",
+      "query": "How did a five-protein sepsis panel compare with procalcitonin alone?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "sepsis_biomarker_panel.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "0.89",
+        "0.78",
+        "negative predictive value",
+        "97.8 percent"
+      ]
+    },
+    {
+      "query_id": "q026",
+      "query": "How did the electrocardiogram deep learning model perform on external validation?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "ecg_deep_learning_screening.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "0.93",
+        "0.87",
+        "calibration error",
+        "recalibration"
+      ]
+    },
+    {
+      "query_id": "q027",
+      "query": "Which carbapenemase gene became more prevalent in Klebsiella pneumoniae over the surveillance period?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "antimicrobial_resistance_surveillance.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "blaNDM",
+        "36 percent",
+        "blaKPC",
+        "39 percent"
+      ]
+    },
+    {
+      "query_id": "q028",
+      "query": "What was the objective response rate for claudin-18.2 CAR T cells in gastric cancer?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "car_t_solid_tumour.md",
+          "sections": [
+            "Results"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "38.7 percent",
+        "12 of 31",
+        "71.0 percent"
+      ]
+    },
+    {
+      "query_id": "q029",
+      "query": "Did the melanoma microbiome signature replicate prospectively?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "gut_microbiome_response.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "not associated",
+        "0.91",
+        "interaction",
+        "European"
+      ]
+    },
+    {
+      "query_id": "q030",
+      "query": "How much did readmission model performance drop between retrospective development and prospective evaluation?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "readmission_risk_model.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "0.76",
+        "0.71",
+        "calibration",
+        "1.19"
+      ]
+    },
+    {
+      "query_id": "q031",
+      "query": "What was the efficacy of the subunit tuberculosis vaccine in adults with latent infection?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "tb_vaccine_efficacy.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "50.1 percent",
+        "27",
+        "54",
+        "36 months"
+      ]
+    },
+    {
+      "query_id": "q032",
+      "query": "How much excess symptom burden remained 24 months after SARS-CoV-2 infection?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "long_covid_cohort.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "11.4 percent",
+        "5.9 percent",
+        "5.5 percentage points"
+      ]
+    },
+    {
+      "query_id": "q033",
+      "query": "Which studies report that a model degraded when evaluated outside its development setting?",
+      "type": "comparison",
+      "relevant": [
+        {
+          "document": "ecg_deep_learning_screening.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        },
+        {
+          "document": "readmission_risk_model.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        },
+        {
+          "document": "gut_microbiome_response.md",
+          "sections": [
+            "Results",
+            "Conclusions"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "external validation",
+        "calibration",
+        "did not replicate",
+        "prospective"
+      ]
+    },
+    {
+      "query_id": "q034",
+      "query": "When is a retrieval index rebuild required and what gate must it pass?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "retrieval_service_runbook.md",
+          "sections": [
+            "Index Rebuild Procedure"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "embedding backend",
+        "10 percent",
+        "recall at 5",
+        "two percentage points"
+      ]
+    },
+    {
+      "query_id": "q035",
+      "query": "What alert thresholds page the on-call engineer?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "retrieval_service_runbook.md",
+          "sections": [
+            "Alerting"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "groundedness below 0.80",
+        "1,500 milliseconds",
+        "zero-result rate",
+        "5 percent"
+      ]
+    },
+    {
+      "query_id": "q036",
+      "query": "What is the most common production failure of the retrieval service?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "retrieval_service_runbook.md",
+          "sections": [
+            "Known Failure Modes"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "stale embedding backend",
+        "dense scores",
+        "restarting"
+      ]
+    },
+    {
+      "query_id": "q037",
+      "query": "How are licensed and restricted documents handled by the ingestion policy?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "data_handling_policy.md",
+          "sections": [
+            "Redistribution",
+            "Source Classification"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "never redistributed",
+        "not committed to source control",
+        "retrieved passage"
+      ]
+    },
+    {
+      "query_id": "q038",
+      "query": "How long are raw acquired documents retained and what happens on a deletion request?",
+      "type": "single_hop",
+      "relevant": [
+        {
+          "document": "data_handling_policy.md",
+          "sections": [
+            "Retention"
+          ]
+        }
+      ],
+      "answer_terms": [
+        "90 days",
+        "index rebuild",
+        "24 hours"
+      ]
+    }
+  ]
+}
