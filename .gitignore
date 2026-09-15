@@ -1,0 +1,90 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+.hypothesis/
+
+# Type checking and linting caches
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# Secrets and local configuration
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+!.env.example
+
+# Data directories - never commit corpora or derived indexes
+data/raw/
+data/interim/
+data/processed/
+data/external/
+data/cache/
+!data/fixtures/
+!data/README.md
+
+# Model and index artifacts
+artifacts/
+indexes/
+*.faiss
+*.npz
+*.joblib
+*.pkl
+*.pt
+*.onnx
+
+# Experiment outputs - regenerate with `make experiment`; the committed record
+# of the measured results is docs/results.md
+outputs/
+runs/
+mlruns/
+reports/*
+!reports/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+!tests/**/*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
