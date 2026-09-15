@@ -1,0 +1,89 @@
+name: tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-dev.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+          pip install -e .
+
+      - name: Run tests
+        run: pytest --cov=rag_platform --cov-report=term-missing --cov-report=xml
+
+      - name: Verify the package imports from an installed location
+        # Catches a module that only resolves because the repository root is on
+        # sys.path, which is the usual way a packaged import breaks.
+        run: |
+          cd "${RUNNER_TEMP}"
+          python -c "import rag_platform; print(rag_platform.__version__)"
+
+      - name: Upload coverage report
+        if: matrix.python-version == '3.11'
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage.xml
+          retention-days: 7
+
+  benchmark:
+    # The published numbers must stay reproducible from a clean checkout, so the
+    # benchmark runs on every change rather than only when someone remembers.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -e .
+
+      - name: Build the index and fit the reranker
+        run: python scripts/build_index.py --skip-database
+
+      - name: Run the benchmark
+        run: python scripts/run_experiment.py --sweep --output-dir reports
+
+      - name: Upload the benchmark report
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-report
+          path: |
+            reports/experiment_report.json
+            reports/experiment_summary.md
+          retention-days: 30

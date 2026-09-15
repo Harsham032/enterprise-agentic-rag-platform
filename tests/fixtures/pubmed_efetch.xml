@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE">
+      <PMID Version="1">35000001</PMID>
+      <Article PubModel="Print">
+        <Journal>
+          <ISOAbbreviation>N Engl J Med</ISOAbbreviation>
+          <Title>The New England Journal of Medicine</Title>
+          <JournalIssue><PubDate><Year>2022</Year><Month>Jan</Month></PubDate></JournalIssue>
+        </Journal>
+        <ArticleTitle>Structured Abstract Example: A Randomised Trial</ArticleTitle>
+        <Abstract>
+          <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Prior evidence was limited.</AbstractText>
+          <AbstractText Label="METHODS" NlmCategory="METHODS">We randomised 240 adults to treatment or placebo.</AbstractText>
+          <AbstractText Label="RESULTS" NlmCategory="RESULTS">The primary endpoint occurred in 12 percent versus 21 percent.</AbstractText>
+        </Abstract>
+        <AuthorList>
+          <Author><LastName>Rivera</LastName><ForeName>Ana</ForeName><Initials>A</Initials></Author>
+          <Author><LastName>Chen</LastName><ForeName>Wei</ForeName><Initials>W</Initials></Author>
+        </AuthorList>
+      </Article>
+      <MeshHeadingList>
+        <MeshHeading><DescriptorName MajorTopicYN="N">Randomized Controlled Trials as Topic</DescriptorName></MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE">
+      <PMID Version="1">35000002</PMID>
+      <Article PubModel="Print">
+        <Journal><ISOAbbreviation>Lancet</ISOAbbreviation>
+          <JournalIssue><PubDate><MedlineDate>2021 Nov-Dec</MedlineDate></PubDate></JournalIssue>
+        </Journal>
+        <ArticleTitle>Unstructured Abstract Example</ArticleTitle>
+        <Abstract><AbstractText>A single paragraph abstract without labelled sections.</AbstractText></Abstract>
+      </Article>
+    </MedlineCitation>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="MEDLINE">
+      <PMID Version="1">35000003</PMID>
+      <Article PubModel="Print">
+        <Journal><ISOAbbreviation>BMJ</ISOAbbreviation>
+          <JournalIssue><PubDate><Year>2020</Year></PubDate></JournalIssue>
+        </Journal>
+        <ArticleTitle>Record Without An Abstract</ArticleTitle>
+      </Article>
+    </MedlineCitation>
+  </PubmedArticle>
+</PubmedArticleSet>
