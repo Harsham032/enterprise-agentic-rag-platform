@@ -24,7 +24,7 @@ The machine-readable report, including per-query results, is written to
 | Package version | 0.1.0 |
 | Seed | 20260101 |
 | Run date | 2026-09-15 |
-| Test suite at time of run | 226 tests, all passing |
+| Test suite at time of run | 250 tests, all passing |
 
 Latency figures are wall-clock on this machine with no accelerator. They are
 useful for comparing configurations against each other and should not be read

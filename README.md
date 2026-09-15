@@ -341,8 +341,8 @@ container and asserts that `/health` reports `ok`.
 ## Testing
 
 ```bash
-make test        # 226 tests
-make coverage    # ~89% statement coverage
+make test        # 250 tests
+make coverage    # 90% statement coverage
 make check       # ruff + black + mypy (strict) + tests
 ```
 
@@ -396,7 +396,7 @@ and a comparison query's evidence stays inside the entities it names.
 │   ├── retrieval/                lexical, dense, hybrid, index
 │   ├── services/                 FastAPI application and schemas
 │   └── utils/                    text, timing, seeding
-└── tests/                        226 tests
+└── tests/                        250 tests
 ```
 
 ## Limitations
